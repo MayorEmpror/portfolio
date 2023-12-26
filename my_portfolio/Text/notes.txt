@@ -1,0 +1,82 @@
+ <div className='bg-[rgb(0,23,27)] h-[1000px] w-full z-20  '>
+    <nav className='h-[60px] w-full bg-transparent flex flex-row  '> 
+     <div className="bg-[url('')] h-[35px] w-[127px] bg-center bg-no-repeat bg-cover  border-teal-50  my-auto mb-0 ml-[58px]  "  ></div>
+   
+     <div className ="bg-transparent  text-center  h-full w-[433px] ml-auto mr-[61px] grid grid-cols-4 grid-rows-1 gap-4">
+    <div className={nav_option_styles + nav_display}>Home </div>
+    <div className={nav_option_styles + nav_display}>Home </div>
+    <div className={nav_option_styles + nav_display}>Home </div>
+    <div className={nav_option_styles + nav_display}>Home </div>
+    
+     </div>
+    </nav>
+    
+     
+     
+      <div className='h-[900px] w-full bg-[rgb(0,23,27)] flex'>
+
+      <div className='h-full w-full bg-whte '>
+     
+       <div className='parallax   '>
+   <div className='parallax__group'>
+
+   <Introduction /> 
+   <Certifications />
+    <Works/>
+       <TechHeding/>
+      <Technologies/>
+   <div className=" parallax__layer--back  w-1/3  h-[700px] mx-auto flex relative  my-auto bg-[url('../../SVG/AdobeStock_201035547.jpeg')] bg-center bg-cover mr-52 bg-fixed" >  </div>
+          <div className= "bg-whte h-[700px] w-1/2 parallax__layer--fore  mr-auto ml-48 ">
+          <Itemslogo  id={x.id} childeren={x.childeren} offset={x.offset} className="mx-auto" />
+          </div>
+          <div className='parallax__layer--base text-6xl bg-blck mx-auto w-2/3 text-left fore flex text-white font-semibold relative top-[300px] left-[-180px]'>
+      Contact Us for Exceptional Web Development Solutions!
+      </div>
+      <div className='parallax__layer--fore text-xl bg-blck mx-auto w-1/2 text-left fore flex flex-col text-white font-semibold relative top-[420px] left-[-124px]'>
+      Are you ready to elevate your online presence and create a digital masterpiece that captivates your audience? Look no further! Our dedicated team of skilled web developers is here to turn your vision into a stunning reality.
+      <div className='mt-10'>
+  <div className="  z-10 h-[50px] w-[25.5%] border-l border-r border-white rounded-xl  overflow-hidden  ">
+   <div className='gradient-button '></div>
+   </div>
+   <div className=" h-[46px] mt-[-48px] w-1/4 bg-[rgb(12,31,32)] rounded-xl my-auto flex absolute ml-[1px] z-20">
+   <svg   className='mx-auto my-auto relative mr-1 h-4 w-4 stroke-[3]' xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+    <div className='font-semibold text-sm hover:text-md text-center ml-auto mr-6 relative my-auto animated-border text-white '>Contact Me</div>
+   </div>
+
+  </div>
+ 
+      </div>
+          <div className= "bg-[url('../../SVG/abstract-geometric-background.be70aec4.jpg')] h-[700px] w-3/4 parallax__layer-back mt-[-100px]  bg-cover bg-no-repeat backdrop-contrast-200 flex" style={{boxShadow: "2px 2px 15px 11px"}}>
+         {/* <div className='text-6xl my-auto mx-auto w-2/3 text-left fore flex text-white font-semibold parallax'>
+        <div className='parallax__group'> 
+     
+        </div>
+
+         </div> */}
+
+            <div className='h-full w-1/12 bg-whte ml-auto border-l border-l-stone-200 '>
+            <CiFacebook className="text-white"/>
+            <CiFacebook className="text-white"/>
+            <CiFacebook className="text-white"/>
+            <CiFacebook className="text-white"/>
+            <CiFacebook className="text-white"/>
+            
+         
+
+            </div>
+          </div>
+         
+
+
+
+
+          <div className='bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-60% w-[500px] h-[296px] relative z-10 ml-auto my-auto flex blur-[414px]'>k</div>
+          <div className='h-[100px]'>
+</div>
+
+   </div>
+       </div>
+     
+      </div>
+      </div>
+    </div>

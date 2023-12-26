@@ -1,0 +1,43 @@
+{
+  "name": "my_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prod": "vercel --prod",
+    "clean": "next build --clean",
+    "build_debug": "DEBUG=* next build"
+   
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.23.4",
+    "dat.gui": "^0.7.9",
+    "framer-motion": "^10.16.16",
+    "next": "14.0.4",
+    "next-videos": "^1.4.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^4.12.0",
+    "vercel": "^33.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "cannon": "^0.6.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "fontfaceobserver": "^2.3.0",
+    "gsap": "^3.12.4",
+    "imagesloaded": "^5.0.0",
+    "lil-gui": "^0.19.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "three": "^0.158.0",
+    "typescript": "^5"
+  }
+}

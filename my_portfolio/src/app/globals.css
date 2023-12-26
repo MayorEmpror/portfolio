@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: rgb(0,23,27);
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+.gradient-button {
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  height: 1000px;
+  width: 1000px;
+  left : -500px;
+}
+
+.gradient-button:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -26rem; right: 0; bottom: -2rem; left: 0;
+  background-image: repeating-linear-gradient(45deg, rgb(40, 39, 39), white -21px, rgb(56, 54, 54) 55px, rgb(255 255 255) 79px);
+ 
+  animation: rotate-gradient 4s infinite linear;
+}
+
+
+@keyframes rotate-gradient {
+  to { transform: rotate(360deg) }
+}
+
+.parrent {
+  transition: all !important;
+  transition-duration: 5000ms !important;
+ 
+}
+.tab:hover>:nth-child(1)>:nth-child(2){
+  position: relative;
+  scale: 1.1;
+box-shadow: 2px 2px 15px 11px;
+}
+.tab:hover>:nth-child(1)>:nth-child(4){
+  position: relative;
+  scale: 1.1;
+box-shadow: 2px 2px 15px 11px;
+}
+.tab:hover>:nth-child(1)>:nth-child(1){
+  transition: all !important;
+  
+  position: relative;
+  scale: 1.2;
+box-shadow: 2px 2px 15px 11px;
+}
+
+
+
+
+
+
+.parallax  {
+  top:auto;
+ position: relative;
+ height: 1000px; /* fallback for older browsers */
+ height: 1000px;
+ overflow-x: hidden;
+ background-color: transparent;
+ overflow-y: scroll !important;
+ -webkit-perspective: 300px;
+ perspective: 300px;
+ scrollbar-width: none !important
+}
+@media only screen and  (min-width:600px){
+  .parallax{
+    top:auto;
+
+
+    position: relative;
+    height: 1000px; /* fallback for older browsers */
+    height: 1000px;
+    overflow-x: hidden;
+    background-color: transparent;
+    overflow-y: scroll !important;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+    scrollbar-width: none !important
+  }
+}
+.parallax::-webkit-scrollbar {
+  display: none;
+}
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.prallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(100);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+
+
+#container{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.blur-uné {
+  --tw-blur: blur(1px);
+  filter: var(--tw-blur)
+}
+.selector {
+  --user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
